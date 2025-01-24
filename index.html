@@ -217,6 +217,25 @@ section h2::after {
         transform: translateY(-5px);
     }
 }
+        <style>
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-5px);
+        }
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+</style>
+
 
     </style>
 </head>
@@ -291,22 +310,87 @@ section h2::after {
                 <p>Expert in Python programming for data science and automation.</p>
             </div>
             <div class="skill-card programming" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="javascript.png" alt="JavaScript" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <img src="R.png" alt="R" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">R</h3>
+                <p>Proficient in R for statistical analysis, data manipulation, and visualization.</p>
+            </div>
+             <div class="skill-card programming" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="sql.png" alt="SQL" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">SQL</h3>
+                <p>Skilled in SQL for querying and managing relational databases efficiently.</p>
+            </div>
+
+            <div class="skill-card programming" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="java-script.png" alt="JavaScript" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
                 <h3 style="color: #64ffda; margin: 1rem 0;">JavaScript</h3>
                 <p>Proficient in JavaScript for web development and interactive interfaces.</p>
             </div>
+
+    
             <!-- Machine Learning Skills -->
             <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="ml.png" alt="Machine Learning" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
-                <h3 style="color: #64ffda; margin: 1rem 0;">Machine Learning</h3>
-                <p>Skilled in designing predictive models and algorithms.</p>
+                <img src="supervised.png" alt="Supervised Learning" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Supervised Learning</h3>
+                <p>Developing classification and regression models using supervised techniques.</p>
+            </div>
+            <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="unsupervised.png" alt="Unsupervised Learning" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Unsupervised Learning</h3>
+                <p>Expert in clustering techniques and dimensionality reduction methods.</p>
+            </div>
+            <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    <img src="clustering.png" alt="Clustering" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+    <h3 style="color: #64ffda; margin: 1rem 0;">Clustering</h3>
+    <p>Skilled in clustering algorithms like K-Means, DBSCAN, and hierarchical clustering for grouping datasets.</p>
+</div>
+            <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    <img src="deep-learning.png" alt="Deep Learning" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+    <h3 style="color: #64ffda; margin: 1rem 0;">Deep Learning</h3>
+    <p>Proficient in deep learning using TensorFlow and PyTorch for building advanced neural networks.</p>
+</div>
+           <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    <img src="nlp.png" alt="Natural Language Processing (NLP)" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+    <h3 style="color: #64ffda; margin: 1rem 0;">Natural Language Processing (NLP)</h3>
+    <p>Experienced in processing and analyzing text data using NLP techniques like tokenization, stemming, and sentiment analysis.</p>
+</div>
+          <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    <img src="modeloptimise.png" alt="Model Optimization" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+    <h3 style="color: #64ffda; margin: 1rem 0;">Model Optimization</h3>
+    <p>Expert in optimizing machine learning models using hyperparameter tuning and regularization techniques.</p>
+</div>
+       <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="model-deploy.png" alt="Model Deployment" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Model Deployment</h3>
+                <p>Deploying machine learning models using , Heroku, Flask, Docker, and cloud services.</p>
+            </div>
+                
             </div>
             <!-- Visualization Skills -->
             <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="tableau.png" alt="Tableau" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <img src="tablaeu.png" alt="Tableau" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
                 <h3 style="color: #64ffda; margin: 1rem 0;">Tableau</h3>
                 <p>Experienced in creating dynamic visualizations and dashboards.</p>
             </div>
+           <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="powerbi.png" alt="Power BI" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Power BI</h3>
+                <p>Proficient in Power BI for business intelligence and data storytelling.</p>
+            </div>
+            <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="storyboard.png" alt="Data Storytelling" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Data Storytelling</h3>
+                <p>Crafting compelling narratives using data to drive business decisions.</p>
+            </div>
+           <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="interactive.png" alt="Interactive Visualizations" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Interactive Visualizations</h3>
+                <p>Creating dynamic and interactive charts for impactful presentations.</p>
+            </div>
+        <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+    <img src="advanced-charting.png" alt="Advanced Charting" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+    <h3 style="color: #64ffda; margin: 1rem 0;">Advanced Charting</h3>
+    <p>Proficient in creating advanced visualizations such as heatmaps, scatter matrix plots, and multi-dimensional charts for better insights.</p>
+</div>
         </div>
     </div>
 </section>
@@ -346,50 +430,32 @@ section h2::after {
         <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">
             Our Services
         </h2>
-        <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto;"></span>
-        <div style="position: relative; text-align: center; margin-top: 3rem;">
-            <!-- Central Node (Main Service) -->
-            <div style="display: inline-block; background: #64ffda; color: #1f1f1f; border-radius: 50%; width: 150px; height: 150px; line-height: 150px; text-align: center; font-size: 1.5rem; font-weight: bold; margin: auto;">
-                Services
-            </div>
-
-            <!-- Branch Connections -->
-            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; left: 50%; top: 150px; transform: translateX(-50%);"></div>
-            <div style="position: absolute; width: 300px; height: 2px; background: #64ffda; left: 50%; top: 250px; transform: translateX(-150px);"></div>
-            <div style="position: absolute; width: 300px; height: 2px; background: #64ffda; right: 50%; top: 250px; transform: translateX(150px);"></div>
-                
-                  <!-- First Row of Nodes -->
-                <div style="display: flex; justify-content: space-between; margin-top: 2rem; max-width: 800px; margin: auto;">
+           <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto;"></span>
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
                 <!-- Service 1 -->
-                <div style="text-align: center; flex: 1; margin: 0 1rem;">
-                    <img src="analytics.png" alt="Data Analysis" style="width: 100px; margin-bottom: 1rem;">
-                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Analysis</h3>
+               <div class="service-card" style="flex: 1; min-width: 300px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s, box-shadow 0.3s;">
+                <img src="analytics.png" alt="Data Analysis" style="width: 80px; height: 80px; margin-bottom: 1rem; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Analysis</h3>
                 <p style="line-height: 1.6;">Performing detailed exploratory data analysis to uncover trends and insights. Cleaning and preprocessing data to ensure its accuracy and reliability for analysis. Conducting statistical analysis to evaluate relationships between variables. Creating insightful visualizations like histograms, scatter plots, and heatmaps. Using feature engineering techniques to prepare datasets for advanced modeling. Helping clients make informed decisions through in-depth data understanding.
 
 </p>
             </div>
             <!-- Service 2 -->
-             <div style="text-align: center; flex: 1; margin: 0 1rem;">
-                    <img src="machin.png" alt="Machine Learning" style="width: 100px; margin-bottom: 1rem;">
-                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Machine Learning</h3>
-
+             <div class="service-card" style="flex: 1; min-width: 300px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s, box-shadow 0.3s;">
+                <img src="machin.png" alt="Machine Learning Models" style="width: 80px; height: 80px; margin-bottom: 1rem; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Machine Learning Models</h3>
                 <p style="line-height: 1.6;">Designing and developing predictive models to extract actionable insights from complex datasets. Specializing in supervised and unsupervised learning techniques to solve classification, regression, and clustering problems. Expertise in libraries like TensorFlow, PyTorch, and Scikit-learn. Leveraging hyperparameter tuning and model optimization to improve performance. Implementing scalable ML pipelines for real-world applications in diverse domains. Delivering solutions tailored to meet client requirements and business goals..</p>
             </div>
-                      <!-- Second Row Connection -->
-            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; left: 25%; top: 300px;"></div>
-            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; right: 25%; top: 300px;"></div>
-            <!-- Second Row of Nodes -->
-            <div style="display: flex; justify-content: space-between; margin-top: 4rem; max-width: 800px; margin: auto;">
                 <!-- Service 3 -->
-                <div style="text-align: center; flex: 1; margin: 0 1rem;">
-                    <img src="datavl.png" alt="Data Visualization" style="width: 100px; margin-bottom: 1rem;">
-                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Visualization</h3>
+                <div class="service-card" style="flex: 1; min-width: 300px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s, box-shadow 0.3s;">
+                <img src="datavl.png" alt="Data Visualization" style="width: 80px; height: 80px; margin-bottom: 1rem; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Visualization</h3>
                 <p style="line-height: 1.6;">Crafting visually compelling dashboards and charts to represent complex data effectively. Utilizing tools like Matplotlib, Seaborn, and Tableau to uncover insights. Developing interactive visuals for better data storytelling and decision-making. Simplifying trends and relationships in data through meaningful visual summaries. Focusing on creating user-friendly and intuitive designs tailored to audience needs. Delivering actionable insights for stakeholders by making data accessible and comprehensible.</p>
             </div>
             <!-- Service 4 -->
-            <div style="text-align: center; flex: 1; margin: 0 1rem;">
-                    <img src="product.png" alt="AI Integration" style="width: 100px; margin-bottom: 1rem;">
-                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Recommendation Systems</h3>
+                 <div class="service-card" style="flex: 1; min-width: 300px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); transition: transform 0.3s, box-shadow 0.3s;">
+                <img src="product.png" alt="AI Integration" style="width: 80px; height: 80px; margin-bottom: 1rem; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">AI Integration</h3>
                 <p style="line-height: 1.6;">Building recommendation engines to enhance user engagement and retention. Leveraging collaborative and content-based filtering techniques for accurate predictions. Applying matrix factorization methods for handling sparse datasets efficiently. Tailoring algorithms to personalize product, content, or service recommendations. Measuring success through precision, recall, and other evaluation metrics. Delivering scalable solutions to meet user preferences across industries.
 
 </p>
