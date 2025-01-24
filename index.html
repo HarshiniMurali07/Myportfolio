@@ -343,40 +343,57 @@ section h2::after {
     </section>
             <section id="services" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
-            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">
-             Services
-            <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto 0;"></span>
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">
+            Our Services
         </h2>
-                    <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto;"></span>
-    </div>
-                  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">      
-            <!-- Service 1 -->
-                <div style="flex: 1; min-width: 300px; text-align: center;">
-                <img src="analytics.png" alt="Data Analysis" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
-                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Analysis</h3>
+        <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto;"></span>
+        <div style="position: relative; text-align: center; margin-top: 3rem;">
+            <!-- Central Node (Main Service) -->
+            <div style="display: inline-block; background: #64ffda; color: #1f1f1f; border-radius: 50%; width: 150px; height: 150px; line-height: 150px; text-align: center; font-size: 1.5rem; font-weight: bold; margin: auto;">
+                Services
+            </div>
+
+            <!-- Branch Connections -->
+            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; left: 50%; top: 150px; transform: translateX(-50%);"></div>
+            <div style="position: absolute; width: 300px; height: 2px; background: #64ffda; left: 50%; top: 250px; transform: translateX(-150px);"></div>
+            <div style="position: absolute; width: 300px; height: 2px; background: #64ffda; right: 50%; top: 250px; transform: translateX(150px);"></div>
+                
+                  <!-- First Row of Nodes -->
+                <div style="display: flex; justify-content: space-between; margin-top: 2rem; max-width: 800px; margin: auto;">
+                <!-- Service 1 -->
+                <div style="text-align: center; flex: 1; margin: 0 1rem;">
+                    <img src="analytics.png" alt="Data Analysis" style="width: 100px; margin-bottom: 1rem;">
+                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Analysis</h3>
                 <p style="line-height: 1.6;">Performing detailed exploratory data analysis to uncover trends and insights. Cleaning and preprocessing data to ensure its accuracy and reliability for analysis. Conducting statistical analysis to evaluate relationships between variables. Creating insightful visualizations like histograms, scatter plots, and heatmaps. Using feature engineering techniques to prepare datasets for advanced modeling. Helping clients make informed decisions through in-depth data understanding.
 
 </p>
             </div>
             <!-- Service 2 -->
-            <div style="flex: 1; min-width: 300px; text-align: center;">
-                 <img src="machin.png" alt="Machine Learning Models" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
-                 <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Machine Learning Models</h3>
+             <div style="text-align: center; flex: 1; margin: 0 1rem;">
+                    <img src="machin.png" alt="Machine Learning" style="width: 100px; margin-bottom: 1rem;">
+                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Machine Learning</h3>
+
                 <p style="line-height: 1.6;">Designing and developing predictive models to extract actionable insights from complex datasets. Specializing in supervised and unsupervised learning techniques to solve classification, regression, and clustering problems. Expertise in libraries like TensorFlow, PyTorch, and Scikit-learn. Leveraging hyperparameter tuning and model optimization to improve performance. Implementing scalable ML pipelines for real-world applications in diverse domains. Delivering solutions tailored to meet client requirements and business goals..</p>
             </div>
-            <!-- Service 3 -->
-        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 2rem;">
-                <img src="datavl.png" alt="Data Visualization" style="width:100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
-                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Visualization</h3>
+                      <!-- Second Row Connection -->
+            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; left: 25%; top: 300px;"></div>
+            <div style="position: absolute; width: 2px; height: 100px; background: #64ffda; right: 25%; top: 300px;"></div>
+            <!-- Second Row of Nodes -->
+            <div style="display: flex; justify-content: space-between; margin-top: 4rem; max-width: 800px; margin: auto;">
+                <!-- Service 3 -->
+                <div style="text-align: center; flex: 1; margin: 0 1rem;">
+                    <img src="datavl.png" alt="Data Visualization" style="width: 100px; margin-bottom: 1rem;">
+                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Visualization</h3>
                 <p style="line-height: 1.6;">Crafting visually compelling dashboards and charts to represent complex data effectively. Utilizing tools like Matplotlib, Seaborn, and Tableau to uncover insights. Developing interactive visuals for better data storytelling and decision-making. Simplifying trends and relationships in data through meaningful visual summaries. Focusing on creating user-friendly and intuitive designs tailored to audience needs. Delivering actionable insights for stakeholders by making data accessible and comprehensible.</p>
             </div>
             <!-- Service 4 -->
-            <div style="flex: 1; min-width: 300px; text-align: center;">
-                <img src="product.png" alt="AI Integration" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
-                <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Recommendation Systems</h3>
+            <div style="text-align: center; flex: 1; margin: 0 1rem;">
+                    <img src="product.png" alt="AI Integration" style="width: 100px; margin-bottom: 1rem;">
+                    <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Recommendation Systems</h3>
                 <p style="line-height: 1.6;">Building recommendation engines to enhance user engagement and retention. Leveraging collaborative and content-based filtering techniques for accurate predictions. Applying matrix factorization methods for handling sparse datasets efficiently. Tailoring algorithms to personalize product, content, or service recommendations. Measuring success through precision, recall, and other evaluation metrics. Delivering scalable solutions to meet user preferences across industries.
 
 </p>
+            </div>
             </div>
         </div>
     </div>
