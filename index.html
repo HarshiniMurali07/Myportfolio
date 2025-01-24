@@ -137,8 +137,8 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 #skills-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem; /* Space between cards */
     justify-content: center; /* Center-align all cards */
 }
@@ -379,7 +379,7 @@ section h2::after {
     <p>Expert in optimizing machine learning models using hyperparameter tuning and regularization techniques.</p>
 </div>
        <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="deployement.png" alt="Model Deployment" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <img src="deployment.png" alt="Model Deployment" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
                 <h3 style="color: #64ffda; margin: 1rem 0;">Model Deployment</h3>
                 <p>Deploying machine learning models using , Heroku, Flask, Docker, and cloud services.</p>
             </div>
