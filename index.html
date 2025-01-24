@@ -206,6 +206,18 @@ section h2::after {
             background: #1f1f1f;
             margin-top: 2rem;
         }
+        @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
     </style>
 </head>
 <body>
@@ -257,17 +269,60 @@ section h2::after {
 </section>
 
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill">Python</div>
-            <div class="skill">Machine Learning</div>
-            <div class="skill">Deep Learning</div>
-            <div class="skill">Data Visualization</div>
-            <div class="skill">SQL</div>
-            <div class="skill">Big Data Tools</div>
+    <section id="skills" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
+    <div style="max-width: 1200px; margin: auto; text-align: center;">
+        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; position: relative; display: inline-block; margin-bottom: 2rem;">
+            My Skills
+            <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto 0;"></span>
+        </h2>
+        <!-- Tabs -->
+        <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
+            <button onclick="filterSkills('all')" style="padding: 0.5rem 1rem; background: #64ffda; border: none; border-radius: 5px; cursor: pointer;">All</button>
+            <button onclick="filterSkills('programming')" style="padding: 0.5rem 1rem; background: #64ffda; border: none; border-radius: 5px; cursor: pointer;">Programming</button>
+            <button onclick="filterSkills('machine-learning')" style="padding: 0.5rem 1rem; background: #64ffda; border: none; border-radius: 5px; cursor: pointer;">Machine Learning</button>
+            <button onclick="filterSkills('visualization')" style="padding: 0.5rem 1rem; background: #64ffda; border: none; border-radius: 5px; cursor: pointer;">Visualization</button>
         </div>
-    </section>
+        <!-- Skill Cards -->
+        <div id="skills-container" style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+            <!-- Programming Skills -->
+            <div class="skill-card programming" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="python.png" alt="Python" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Python</h3>
+                <p>Expert in Python programming for data science and automation.</p>
+            </div>
+            <div class="skill-card programming" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="javascript.png" alt="JavaScript" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">JavaScript</h3>
+                <p>Proficient in JavaScript for web development and interactive interfaces.</p>
+            </div>
+            <!-- Machine Learning Skills -->
+            <div class="skill-card machine-learning" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="ml.png" alt="Machine Learning" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Machine Learning</h3>
+                <p>Skilled in designing predictive models and algorithms.</p>
+            </div>
+            <!-- Visualization Skills -->
+            <div class="skill-card visualization" style="display: flex; flex-direction: column; align-items: center; background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <img src="tableau.png" alt="Tableau" style="width: 80px; height: 80px; animation: bounce 1.5s infinite;">
+                <h3 style="color: #64ffda; margin: 1rem 0;">Tableau</h3>
+                <p>Experienced in creating dynamic visualizations and dashboards.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+    function filterSkills(category) {
+        const skillCards = document.querySelectorAll('.skill-card');
+        skillCards.forEach(card => {
+            if (category === 'all' || card.classList.contains(category)) {
+                card.style.display = 'flex';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>
+
 
     <section id="projects">
         <h2>Projects</h2>
@@ -288,34 +343,36 @@ section h2::after {
     </section>
             <section id="services" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
-        <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; position: relative; display: inline-block; margin-bottom: 2rem;">
-            Our Services
+            <h2 style="font-family: 'Montserrat', sans-serif; font-size: 2rem; color: #ffffff; margin-bottom: 0.5rem;">
+             Services
             <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto 0;"></span>
         </h2>
-        <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
+                    <span style="display: block; width: 50px; height: 3px; background: #64ffda; margin: 10px auto;"></span>
+    </div>
+                  <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">      
             <!-- Service 1 -->
-            <div style="flex: 1; min-width: 250px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: left; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="analytics.png" alt="Data Analysis" style="width: 80px; height: 80px; margin-bottom: 1rem;">
+                <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="analytics.png" alt="Data Analysis" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
                 <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Analysis</h3>
                 <p style="line-height: 1.6;">Performing detailed exploratory data analysis to uncover trends and insights. Cleaning and preprocessing data to ensure its accuracy and reliability for analysis. Conducting statistical analysis to evaluate relationships between variables. Creating insightful visualizations like histograms, scatter plots, and heatmaps. Using feature engineering techniques to prepare datasets for advanced modeling. Helping clients make informed decisions through in-depth data understanding.
 
 </p>
             </div>
             <!-- Service 2 -->
-            <div style="flex: 1; min-width: 250px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: left; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                 <img src="machin.png" alt="Machine Learning Models" style="width: 80px; height: 80px; margin-bottom: 1rem;">
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                 <img src="machin.png" alt="Machine Learning Models" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
                  <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Machine Learning Models</h3>
                 <p style="line-height: 1.6;">Designing and developing predictive models to extract actionable insights from complex datasets. Specializing in supervised and unsupervised learning techniques to solve classification, regression, and clustering problems. Expertise in libraries like TensorFlow, PyTorch, and Scikit-learn. Leveraging hyperparameter tuning and model optimization to improve performance. Implementing scalable ML pipelines for real-world applications in diverse domains. Delivering solutions tailored to meet client requirements and business goals..</p>
             </div>
             <!-- Service 3 -->
-            <div style="flex: 1; min-width: 250px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: left; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="datavl.png" alt="Data Visualization" style="width: 80px; height: 80px; margin-bottom: 1rem;">
+        <div style="display: flex; flex-wrap: wrap; gap: 2rem; align-items: center; margin-top: 2rem;">
+                <img src="datavl.png" alt="Data Visualization" style="width:100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
                 <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Data Visualization</h3>
                 <p style="line-height: 1.6;">Crafting visually compelling dashboards and charts to represent complex data effectively. Utilizing tools like Matplotlib, Seaborn, and Tableau to uncover insights. Developing interactive visuals for better data storytelling and decision-making. Simplifying trends and relationships in data through meaningful visual summaries. Focusing on creating user-friendly and intuitive designs tailored to audience needs. Delivering actionable insights for stakeholders by making data accessible and comprehensible.</p>
             </div>
             <!-- Service 4 -->
-            <div style="flex: 1; min-width: 250px; max-width: 350px; background: #2a2a2a; border-radius: 8px; padding: 1.5rem; text-align: left; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
-                <img src="product.png" alt="AI Integration" style="width: 80px; height: 80px; margin-bottom: 1rem;">
+            <div style="flex: 1; min-width: 300px; text-align: center;">
+                <img src="product.png" alt="AI Integration" style="width: 100%; max-width: 300px; border-radius: 8px; margin-bottom: 1rem;">
                 <h3 style="color: #64ffda; font-size: 1.5rem; margin-bottom: 1rem;">Recommendation Systems</h3>
                 <p style="line-height: 1.6;">Building recommendation engines to enhance user engagement and retention. Leveraging collaborative and content-based filtering techniques for accurate predictions. Applying matrix factorization methods for handling sparse datasets efficiently. Tailoring algorithms to personalize product, content, or service recommendations. Measuring success through precision, recall, and other evaluation metrics. Delivering scalable solutions to meet user preferences across industries.
 
@@ -331,6 +388,7 @@ section h2::after {
         <p>Have a question or want to work together? Reach out to me!</p>
         <p>Email: <a href="mailto:yourname@example.com">harshinihachu6@gmail.com</a></p>
     </section>
+    
 
     <footer>
         <p>© 2025 HarshiniMurali. All rights reserved.</p>
