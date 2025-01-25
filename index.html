@@ -55,16 +55,23 @@
             margin: auto;
         }
 
-        .hero {
-    height: 100vh; /* Full-screen height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+        hero {
     text-align: center;
-    color: #fff;
     position: relative;
-    overflow: hidden;
-        }
+    background-image: url('Photo.jpg'); /* Replace with the correct image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+    height: 100vh; /* Covers the full height of the viewport */
+    color: #fff;
+    padding: 6rem 2rem;
+    display: flex; /* Enables centering */
+    flex-direction: column;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5); /* Adds a dark overlay for text readability */
+    animation: fadeIn 1.5s ease-in-out;
+}
        .hero .overlay {
     position: absolute;
     top: 0;
@@ -291,7 +298,7 @@ section h2::after {
         </nav>
     </header>
 
-    <section class="hero"style="background-image: url('Coverpic.png'); background-size: cover; background-position: center; position: relative;">
+    <section class="hero">
         <div class="overlay"></div>
     <div class="hero-content">
         <h1>Hi, I'm Harshini Murali <h1>
