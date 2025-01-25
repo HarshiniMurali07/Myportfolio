@@ -521,7 +521,8 @@ section h2::after {
     }
 </script>
 
-
+    <!-- Add the Swiper.js CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <section id="sentiment-analysis" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
 
@@ -540,9 +541,12 @@ section h2::after {
         <div style="margin: 2rem auto;">
             <img src="path-to-visualization-or-gif.gif" alt="Sentiment Analysis Visualization" style="width: 100%; max-width: 600px; border-radius: 10px; animation: pulse 2s infinite;">
         </div>
+        <!-- Carousel/Slider -->
+        <div class="swiper-container" style="margin-top: 3rem;">
+            <div class="swiper-wrapper">
 
         <!-- Key Features -->
-        <div style="margin-top: 3rem;">
+         <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
             <h3 style="color: #ffffff; font-size: 1.8rem;">Key Features</h3>
             <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
                 <div class="feature-card" style="background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; animation: fadeIn 1.5s ease-in-out;">
@@ -563,9 +567,8 @@ section h2::after {
                 </div>
             </div>
         </div>
-
-        <!-- Technologies Used -->
-        <div style="margin-top: 4rem;">
+        <!-- Slide 2 -->
+                <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
             <h3 style="color: #ffffff; font-size: 1.8rem;">Technologies Used</h3>
             <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
                 <div style="text-align: center;">
@@ -590,14 +593,43 @@ section h2::after {
                 </div>
             </div>
         </div>
+         !-- Slide 3 -->
+                <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
+                    <h3 style="color: #64ffda;">Project Overview</h3>
+                    <img src="path-to-visualization-or-gif.gif" alt="Project GIF" 
+                         style="width: 100%; max-width: 500px; margin: 1rem auto; border-radius: 10px;">
+                    <p>
+                        Analyze sentiments of social media data in real-time using advanced NLP techniques.
+                        This project showcases powerful data visualizations and easy-to-deploy pipelines.
+                    </p>
+                </div>
+            </div>
+            <!-- Add navigation buttons -->
+            <div class="swiper-button-next" style="color: #64ffda;"></div>
+            <div class="swiper-button-prev" style="color: #64ffda;"></div>
+        </div>
+
 
         <!-- Links -->
         <div style="margin-top: 4rem;">
             <a href="https://github.com/HarshiniMurali07/Sentiment-Analysis" class="btn" style="padding: 0.7rem 1.5rem; background: #64ffda; color: #121212; border-radius: 5px; text-decoration: none;">View on GitHub</a>
-            <a href="path-to-demo-link" class="btn" style="padding: 0.7rem 1.5rem; background: #64ffda; color: #121212; border-radius: 5px; text-decoration: none; margin-left: 1rem;">Live Demo</a>
         </div>
     </div>
 </section>
+            <!-- Add Swiper.js Script -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+            delay: 5000,
+        },
+    });
+</script>
 
             <section id="services" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
