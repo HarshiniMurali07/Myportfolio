@@ -281,6 +281,18 @@ section h2::after {
         transform: translateY(-5px);
     }
 }
+@keyframes growLine {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+.timeline-line {
+    animation: growLine 2s ease-out;
+}
 
 
     </style>
@@ -319,42 +331,54 @@ section h2::after {
             </div>
         </div>
     </section>
-    <section id="education" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem; position: relative;">
+   <section id="education" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem; position: relative;">
     <div style="max-width: 1200px; margin: auto;">
         <h2 style="text-align: center;">Education</h2>
-        <div style="display: flex; flex-direction: column; align-items: center; position: relative;">
-            <!-- Timeline -->
-            <div style="width: 3px; height: 100%; background: #64ffda; position: absolute; left: 50%; transform: translateX(-50%); z-index: -1;"></div>
 
-            <!-- Recent Education -->
-            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 2rem; width: 100%; opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease-in-out forwards;">
-                <img src="uoglogo.png" alt="UOG Logo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
-                <div style="text-align: left;">
-                    <h3 style="margin: 0; color: #64ffda;">2023 - MSc in Data Science</h3>
-                    <p style="margin: 0;">University of Greenwich</p>
+        <!-- Timeline Container -->
+        <div style="position: relative; padding: 2rem 0;">
+            <!-- Vertical Line -->
+            <div style="position: absolute; top: 0; left: 50%; width: 3px; height: 100%; background: #64ffda; transform: translateX(-50%);"></div>
+
+            <!-- First Entry -->
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; position: relative;">
+                <div style="flex: 1; text-align: right; padding-right: 2rem;">
+                    <h3 style="color: #64ffda; margin-bottom: 0.5rem;">MSc in Data Science</h3>
+                    <p>University of Greenwich (2023)</p>
+                </div>
+                <div style="width: 50px; height: 50px; background: #64ffda; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1;">
+                    <img src="uoglogo.png" alt="UOG Logo" style="width: 40px; height: 40px; border-radius: 50%;">
+                </div>
+                <div style="flex: 1; padding-left: 2rem;"></div>
+            </div>
+
+            <!-- Second Entry -->
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; position: relative;">
+                <div style="flex: 1; text-align: right; padding-right: 2rem;"></div>
+                <div style="width: 50px; height: 50px; background: #64ffda; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1;">
+                    <img src="srmlogo.png" alt="SRM Logo" style="width: 40px; height: 40px; border-radius: 50%;">
+                </div>
+                <div style="flex: 1; padding-left: 2rem;">
+                    <h3 style="color: #64ffda; margin-bottom: 0.5rem;">Bachelor of Computer Application</h3>
+                    <p>SRM Arts and Science College (2019)</p>
                 </div>
             </div>
 
-            <!-- Next Education -->
-            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 2rem; width: 100%; opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease-in-out forwards; animation-delay: 0.2s;">
-                <img src="srmlogo.png" alt="SRM Logo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
-                <div style="text-align: left;">
-                    <h3 style="margin: 0; color: #64ffda;">2019 - Bachelor of Computer Application</h3>
-                    <p style="margin: 0;">SRM Arts and Science College</p>
+            <!-- Third Entry -->
+            <div style="display: flex; align-items: center; margin-bottom: 2rem; position: relative;">
+                <div style="flex: 1; text-align: right; padding-right: 2rem;">
+                    <h3 style="color: #64ffda; margin-bottom: 0.5rem;">Class XII (CBSE)</h3>
+                    <p>NSN Memorial School (2016)</p>
                 </div>
-            </div>
-
-            <!-- Older Education -->
-            <div class="education-entry" style="display: flex; align-items: center; margin-bottom: 2rem; width: 100%; opacity: 0; transform: translateY(20px); animation: fadeInUp 1s ease-in-out forwards; animation-delay: 0.4s;">
-                <img src="nsnlogo.png" alt="NSN Logo" style="width: 50px; height: 50px; border-radius: 50%; margin-right: 1rem;">
-                <div style="text-align: left;">
-                    <h3 style="margin: 0; color: #64ffda;">2016 - Class XII (CBSE)</h3>
-                    <p style="margin: 0;">NSN Memorial School</p>
+                <div style="width: 50px; height: 50px; background: #64ffda; border-radius: 50%; display: flex; justify-content: center; align-items: center; position: relative; z-index: 1;">
+                    <img src="nsnlogo.png" alt="NSN Logo" style="width: 40px; height: 40px; border-radius: 50%;">
                 </div>
+                <div style="flex: 1; padding-left: 2rem;"></div>
             </div>
         </div>
     </div>
 </section>
+
 
 <style>
     @keyframes fadeInUp {
