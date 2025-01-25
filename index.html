@@ -520,10 +520,7 @@ section h2::after {
         });
     }
 </script>
-
-    <!-- Add the Swiper.js CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <section id="sentiment-analysis" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
+<section id="sentiment-analysis" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
 
         <!-- Title -->
@@ -541,74 +538,59 @@ section h2::after {
         <div style="margin: 2rem auto;">
             <img src="path-to-visualization-or-gif.gif" alt="Sentiment Analysis Visualization" style="width: 100%; max-width: 600px; border-radius: 10px; animation: pulse 2s infinite;">
         </div>
-        <!-- Carousel/Slider -->
-        <div class="swiper-container" style="margin-top: 3rem;">
-            <div class="swiper-wrapper">
 
-        <!-- Key Features -->
-         <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
-            <h3 style="color: #ffffff; font-size: 1.8rem;">Key Features</h3>
-            <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center; margin-top: 2rem;">
-                <div class="feature-card" style="background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; animation: fadeIn 1.5s ease-in-out;">
-                    <h4 style="color: #64ffda; margin-bottom: 1rem;">Data Preprocessing</h4>
-                    <p>Steps include tokenization, stemming, and removal of stopwords.</p>
-                </div>
-                <div class="feature-card" style="background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; animation: fadeIn 1.5s ease-in-out 0.3s;">
-                    <h4 style="color: #64ffda; margin-bottom: 1rem;">Machine Learning</h4>
-                    <p>Trained on labeled datasets using supervised ML techniques.</p>
-                </div>
-                <div class="feature-card" style="background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; animation: fadeIn 1.5s ease-in-out 0.6s;">
-                    <h4 style="color: #64ffda; margin-bottom: 1rem;">Interactive Visualizations</h4>
-                    <p>Insights displayed through dynamic graphs and charts.</p>
-                </div>
-                <div class="feature-card" style="background: #2a2a2a; padding: 1.5rem; border-radius: 8px; width: 250px; text-align: center; animation: fadeIn 1.5s ease-in-out 0.9s;">
-                    <h4 style="color: #64ffda; margin-bottom: 1rem;">Real-Time Ready</h4>
-                    <p>Deployed for analyzing real-time social media data.</p>
-                </div>
+        <!-- Grid Layout -->
+        <div style="margin-top: 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            
+            <!-- Key Features -->
+            <div style="background: #2a2a2a; border-radius: 10px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <h3 style="color: #ffffff;">Key Features</h3>
+                <ul style="text-align: left; margin-top: 1rem; padding-left: 1rem; list-style: disc;">
+                    <li>Data Preprocessing (Tokenization, Stemming, Removal of Stopwords).</li>
+                    <li>Supervised ML Training on Labeled Datasets.</li>
+                    <li>Dynamic Visualizations for Sentiment Insights.</li>
+                    <li>Deployment-Ready for Real-Time Analysis.</li>
+                </ul>
             </div>
-        </div>
-        <!-- Slide 2 -->
-                <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
-            <h3 style="color: #ffffff; font-size: 1.8rem;">Technologies Used</h3>
-            <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem;">
-                <div style="text-align: center;">
-                    <img src="path-to-python-logo.png" alt="Python" style="width: 50px;">
-                    <p style="margin-top: 0.5rem;">Python</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="path-to-textblob-logo.png" alt="TextBlob" style="width: 50px;">
-                    <p style="margin-top: 0.5rem;">TextBlob</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="path-to-scikit-learn-logo.png" alt="Scikit-learn" style="width: 50px;">
-                    <p style="margin-top: 0.5rem;">Scikit-learn</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="path-to-matplotlib-logo.png" alt="Matplotlib" style="width: 50px;">
-                    <p style="margin-top: 0.5rem;">Matplotlib</p>
-                </div>
-                <div style="text-align: center;">
-                    <img src="path-to-seaborn-logo.png" alt="Seaborn" style="width: 50px;">
-                    <p style="margin-top: 0.5rem;">Seaborn</p>
-                </div>
-            </div>
-        </div>
-         !-- Slide 3 -->
-                <div class="swiper-slide" style="background: #2a2a2a; border-radius: 10px; padding: 2rem;">
-                    <h3 style="color: #64ffda;">Project Overview</h3>
-                    <img src="path-to-visualization-or-gif.gif" alt="Project GIF" 
-                         style="width: 100%; max-width: 500px; margin: 1rem auto; border-radius: 10px;">
-                    <p>
-                        Analyze sentiments of social media data in real-time using advanced NLP techniques.
-                        This project showcases powerful data visualizations and easy-to-deploy pipelines.
-                    </p>
-                </div>
-            </div>
-            <!-- Add navigation buttons -->
-            <div class="swiper-button-next" style="color: #64ffda;"></div>
-            <div class="swiper-button-prev" style="color: #64ffda;"></div>
-        </div>
 
+            <!-- Technologies Used -->
+            <div style="background: #2a2a2a; border-radius: 10px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <h3 style="color: #ffffff;">Technologies Used</h3>
+                <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+                    <div style="text-align: center;">
+                        <img src="path-to-python-logo.png" alt="Python" style="width: 50px;">
+                        <p style="margin-top: 0.5rem;">Python</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="path-to-textblob-logo.png" alt="TextBlob" style="width: 50px;">
+                        <p style="margin-top: 0.5rem;">TextBlob</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="path-to-scikit-learn-logo.png" alt="Scikit-learn" style="width: 50px;">
+                        <p style="margin-top: 0.5rem;">Scikit-learn</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="path-to-matplotlib-logo.png" alt="Matplotlib" style="width: 50px;">
+                        <p style="margin-top: 0.5rem;">Matplotlib</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <img src="path-to-seaborn-logo.png" alt="Seaborn" style="width: 50px;">
+                        <p style="margin-top: 0.5rem;">Seaborn</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Overview -->
+            <div style="background: #2a2a2a; border-radius: 10px; padding: 2rem; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);">
+                <h3 style="color: #64ffda;">Project Overview</h3>
+                <img src="path-to-visualization-or-gif.gif" alt="Project Overview GIF" 
+                     style="width: 100%; max-width: 500px; margin: 1rem auto; border-radius: 10px;">
+                <p>
+                    Analyze sentiments of social media data in real-time using advanced NLP techniques.
+                    This project showcases powerful data visualizations and easy-to-deploy pipelines.
+                </p>
+            </div>
+        </div>
 
         <!-- Links -->
         <div style="margin-top: 4rem;">
@@ -616,20 +598,9 @@ section h2::after {
         </div>
     </div>
 </section>
-            <!-- Add Swiper.js Script -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: {
-            delay: 5000,
-        },
-    });
-</script>
+
+    
+            
 
             <section id="services" style="background-color: #1f1f1f; color: #e0e0e0; padding: 4rem 2rem;">
     <div style="max-width: 1200px; margin: auto; text-align: center;">
